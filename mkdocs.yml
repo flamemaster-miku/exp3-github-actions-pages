@@ -1,0 +1,48 @@
+site_name: 开源软件实验二 · MkDocs 文档站
+site_description: 基于 GitHub Actions 与 GitHub Pages 的自动化构建与部署实验
+site_author: 刘原宏
+site_url: https://flamemaster-miku.github.io/exp3-github-actions-pages/
+repo_url: https://github.com/flamemaster-miku/exp3-github-actions-pages
+repo_name: flamemaster-miku/exp3-github-actions-pages
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 指南: guide.md
+  - API: api.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
